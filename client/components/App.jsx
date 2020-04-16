@@ -1,9 +1,19 @@
 import React from 'react'
+import LandingPage from './LandingPage'
+import EndingPage from './EndingPage'
 
-const App = () => {
-  return (
-    <h1>React development has begun!</h1>
-  )
+class App extends React.Component {
+  render() {
+    console.log('rendering')
+    return (
+      <>
+        {/* <Router>
+          <Route exact path="/" component={LandingPage} />
+        </Router> */}
+        <LandingPage />
+        <EndingPage />
+      </>
+    )
+  }
 }
-
 export default App
