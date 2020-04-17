@@ -1,4 +1,5 @@
-// import React from 'react'
+ import React from 'react'
+ import Dragon from './Dragon'
 // import LandingPage from './LandingPage'
 // import EndingPage from './EndingPage'
 
@@ -20,7 +21,7 @@
 //  Internal API for Kenin n L needs 'link'
 
 import { getDragonBallDetails } from '../api/get-api'
-import characterPage from './Character.jsx'
+// import characterPage from './Dragon.jsx'
 
 
 class App extends React.Component {
@@ -51,11 +52,7 @@ render() {
       </header>
           <ul>
               {this.state.dragon.map((dragon) => {
-                console.log(dragon)
-                return <p>
-                        Kelly loves SCONES {dragon._id}
-                      </p>
-                  {/* return <Dragon key={dragon.id} data={dragon} /> */}
+                  return <Dragon key={dragon.id} data={dragon} />
               })}
           </ul>
         <Route path='/description/:id' render={(props) => (
@@ -65,6 +62,9 @@ render() {
 }
 }
 export default App
+
+//how do I call individual character from the array >
+//how do I call individual character from the array >
 
 // species: "unknown"
 // status: "Alive"

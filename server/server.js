@@ -14,8 +14,7 @@ server.get('/getdbzapi', (req, res)  => {
           
 })     
         
-//route called /dragonball api this exists on my server goes to DGB pulls info back
-//client api.js file change request to this route instead of dragon ball route 
+
 
 module.exports = server
 
