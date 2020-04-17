@@ -1,8 +1,5 @@
 import React from 'react'
 
-
-
-
 // //pass in props
 const Dragon = (props) => {
     console.log()
