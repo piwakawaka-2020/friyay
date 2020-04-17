@@ -2,21 +2,12 @@ import React from 'react'
 
 
 
-// // species: "unknown"
-// // status: "Alive"
-// // originPlanet: "Unknown"
-// // gender: "Male"
-// // _id: "5c7c89fb12b25c00177aa150"
-// // name: "Frieza"
-// // series: "Z"
-// // created: "2019-03-04T02:14:19.836Z"
-// // url: "/api/character/Frieza"
-// // image: "../images/Frieza.jpg"":"../images/Goku.jpg","__v":0},
 
 // //pass in props
 const Dragon = (props) => {
     console.log()
     // console.log(props.dragon)
+    //data holds all of 'dragon' 
     return (
         <ul>
             <li>{props.data.species},</li>
@@ -34,9 +25,22 @@ const Dragon = (props) => {
 }
 
 export default Dragon
-// // <> </>  Fragment
-// // <div> </div>
 
-// // state hold data, GET > use funct in app or use state in app check widgets 
-// //route state=this.state state=this.props.state 
-// // export default Character
+
+
+
+
+
+
+
+
+// // species: "unknown"
+// // status: "Alive"
+// // originPlanet: "Unknown"
+// // gender: "Male"
+// // _id: "5c7c89fb12b25c00177aa150"
+// // name: "Frieza"
+// // series: "Z"
+// // created: "2019-03-04T02:14:19.836Z"
+// // url: "/api/character/Frieza"
+// // image: "../images/Frieza.jpg"":"../images/Goku.jpg","__v":0},
