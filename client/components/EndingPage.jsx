@@ -1,4 +1,5 @@
 import React from 'react'
+import {addWishes} from '../api/wishes'
 
 class EndingPage extends React.Component {
     
@@ -7,7 +8,8 @@ class EndingPage extends React.Component {
         wish: ''
     }
     
-    handleChange =(event)=>{
+
+    handleChange = (event) =>{
         this.setState({
             [event.target.name] : event.target.value
         })
@@ -19,13 +21,19 @@ class EndingPage extends React.Component {
         event.preventDefault()
 
         //addWishes function with setState
+        addWishes(this.state).then(()=>{
+            this.setState({
+                name: '',
+                wish: ''
+            })
+        })
     }
 
     render() {
 
         return (
             <>
-                <form> 
+                <form method = 'POST' onSubmit = {this.submitChange}> 
                     <label>
                         Enter your name mortal:
                         <input type = "text" name ="name" onChange ={this.handleChange}/>

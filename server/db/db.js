@@ -16,6 +16,6 @@ function saveWishes(wish, db = connection) {
     return db('wishes')
       .insert({
         name: wish.name,
-        wishes: wish.wishes
+        wishes: wish.wish
     })
   }

@@ -12,6 +12,7 @@ class App extends React.Component {
           <Route exact path="/" component={LandingPage} />
         </Router> */}
         <LandingPage />
+        <YourWish />
         <EndingPage />
       </>
     )
